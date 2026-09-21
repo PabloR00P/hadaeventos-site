@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>HADA — Próximamente</title>
+<meta name="description" content="HADA graba los mensajes de voz de tus invitados el día de tu boda y los convierte en un vinilo y libro de recuerdo para siempre.">
+<style>
+  :root {
+    --bg: #faf6f1;
+    --ink: #2b2420;
+    --accent: #b5772f;
+    --accent-soft: #e8d9c8;
+    --muted: #7a6f64;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg: #1c1712;
+      --ink: #f3ece3;
+      --accent: #e0a862;
+      --accent-soft: #3a2f24;
+      --muted: #b9ab9c;
+    }
+  }
+  * { box-sizing: border-box; }
+  html, body {
+    margin: 0;
+    padding: 0;
+    background: var(--bg);
+    color: var(--ink);
+    font-family: 'Georgia', 'Iowan Old Style', serif;
+    min-height: 100%;
+  }
+  .wrap {
+    min-height: 100dvh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 32px 20px;
+  }
+  .mark {
+    font-family: 'Georgia', serif;
+    font-size: clamp(2.5rem, 8vw, 4.5rem);
+    letter-spacing: 0.12em;
+    margin: 0 0 8px;
+    color: var(--accent);
+    font-weight: normal;
+  }
+  .tagline {
+    font-size: clamp(1rem, 2.5vw, 1.25rem);
+    color: var(--ink);
+    max-width: 34em;
+    line-height: 1.6;
+    margin: 0 0 28px;
+  }
+  .pill {
+    display: inline-block;
+    padding: 8px 22px;
+    border: 1px solid var(--accent);
+    border-radius: 999px;
+    color: var(--accent);
+    font-size: 0.85rem;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+    margin-bottom: 36px;
+  }
+  .desc {
+    max-width: 30em;
+    color: var(--muted);
+    font-size: 0.98rem;
+    line-height: 1.7;
+    margin-bottom: 36px;
+  }
+  .contact {
+    font-size: 0.95rem;
+    color: var(--muted);
+  }
+  .contact a {
+    color: var(--accent);
+    text-decoration: none;
+    border-bottom: 1px solid var(--accent-soft);
+  }
+  .contact a:hover { border-bottom-color: var(--accent); }
+  footer {
+    margin-top: 48px;
+    font-size: 0.78rem;
+    color: var(--muted);
+    opacity: 0.7;
+  }
+</style>
+</head>
+<body>
+  <div class="wrap">
+    <p class="mark">HADA</p>
+    <span class="pill">Próximamente</span>
+    <p class="tagline">Que cada mensaje de tus invitados se quede contigo para siempre.</p>
+    <p class="desc">
+      Grabamos los mensajes de voz de tus invitados el día de tu boda y los convertimos
+      en un vinilo y un libro de recuerdo que podrás escuchar toda la vida. Estamos
+      terminando de preparar todo — vuelve pronto.
+    </p>
+    <p class="contact">
+      ¿Tienes una boda pronto? Escríbenos a
+      <a href="mailto:espablorodriguez@gmail.com?subject=Hola%20HADA">espablorodriguez@gmail.com</a>
+    </p>
+    <footer>© 2026 HADA</footer>
+  </div>
+</body>
+</html>
